@@ -1,5 +1,4 @@
-# largest-balanced-tree
-Largest balanced string problem solution in C#
+# Largest balanced string problem solution in C#
 
 
 An empty sequence is balanced.
