@@ -9,26 +9,13 @@ namespace Largest_Balanced_String
         static void Main(string[] args)
         {
             var testCases = Convert.ToInt32(Console.ReadLine());
+            List<string> inputString = new List<string>();
 
             for (int i = 0; i < testCases; i++)
             {
-                var input = Console.ReadLine().Trim();
-                Dictionary<char, int> keyValuePairs = new Dictionary<char, int>
-                {
-                    { '(', input.Count(a => a == '(') },
-                    { '{', input.Count(a => a == '{') },
-                    { '[', input.Count(a => a == '[') },
-                    { ')', input.Count(a => a == ')') },
-                    { '}', input.Count(a => a == '}') },
-                    { ']', input.Count(a => a == ']') }
-                };
-
-                int total = Math.Min(keyValuePairs.ContainsKey('(') ? keyValuePairs['('] : 0, keyValuePairs.ContainsKey(')') ? keyValuePairs[')'] : 0) +
-                                Math.Min(keyValuePairs.ContainsKey('{') ? keyValuePairs['{'] : 0, keyValuePairs.ContainsKey('}') ? keyValuePairs['}'] : 0) +
-                                    Math.Min(keyValuePairs.ContainsKey('[') ? keyValuePairs['['] : 0, keyValuePairs.ContainsKey(']') ? keyValuePairs[']'] : 0);
-
-                Console.WriteLine(total * 2);
+                Console.WriteLine(new CheckBalancedString().CountBalancedStrings(Console.ReadLine()));
             }
+
             Console.ReadLine();
         }
     }
