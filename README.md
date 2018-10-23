@@ -39,22 +39,40 @@ Input Constraints
 
 SAMPLE INPUT 
 5
+
 (){}()[]
+
 ))[]]((
+
 {{{{{{{}
+
 []{}]
+
 {}}
+
+
 SAMPLE OUTPUT 
 8
+
 6
+
 2
+
 4
+
 2
+
 Explanation
+
+
 (){}()[]: This is already balanced so ans = 8. 
+
 ))[]](( : By performing few conseqcutive swap you can move last two char to the front. 
           String will look like (())[]]. Then you can remove last character, so final balanced 
           string length is 6.
+
 {{{{{{{}: Remove first 6 characters ans = 2. 
+
 []{}]   : Remove last character ans = 4.
+
 {}}     : Remove last character ans = 2.
