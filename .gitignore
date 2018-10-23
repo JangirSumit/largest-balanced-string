@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Largest Balanced String/obj/Debug
+/Largest Balanced String/bin/Debug
+/.vs/Largest Balanced String/v15
