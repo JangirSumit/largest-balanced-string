@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Largest_Balanced_String
 {
-    public class CheckBalancedString
+    public interface ICheckBalancedString
+    {
+        int CountBalancedStrings(string inputString);
+    }
+
+    public class CheckBalancedString : ICheckBalancedString
     {
         public int CountBalancedStrings(string inputString)
         {
